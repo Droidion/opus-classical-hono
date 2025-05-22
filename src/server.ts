@@ -21,8 +21,6 @@ app.use(
 				"'self'",
 				"'sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+'",
 				"'sha384-NzchC8z9HmP/Ed8cheGl9XuSrFSkDNHPiDl+ujbHE0F0I7tWC4rUnwPXP+7IvVZv'",
-				"'sha256-+oo7jjbAO+Tr8PDe/GEu0E6XloRL/L3Z99OlkkDaR/g='",
-				"'sha256-IAtnNNAx7da4mm6HkJYJl2ZFVK69KgFdHXrV1wPK98c='",
 			],
 			styleSrc: ["'self'", "https:", "'unsafe-inline'"],
 			imgSrc: ["'self'", "https://s3.opusclassical.net"],
