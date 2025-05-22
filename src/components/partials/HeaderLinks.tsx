@@ -36,7 +36,11 @@ export const HeaderLinks: FC = () => {
 				integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
 				crossorigin="anonymous"
 			/>
-			<script src="https://unpkg.com/hyperscript.org@0.9.14" />
+			<script
+				src="https://unpkg.com/hyperscript.org@0.9.14"
+				integrity="sha256-qvfN6NoYkoOeuARSE99bvlVf/W/fb9x0yiH5xYSM6i8="
+				crossorigin="anonymous"
+			/>
 		</>
 	);
 };

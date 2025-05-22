@@ -17,7 +17,13 @@ app.use(
 	secureHeaders({
 		contentSecurityPolicy: {
 			defaultSrc: ["'self'"],
-			scriptSrc: ["'self'"],
+			scriptSrc: [
+				"'self'",
+				"'sha384-Y7hw+L/jvKeWIRRkqWYfPcvVxHzVzn5REgzbawhxAuQGwX1XWe70vji+VSeHOThJ'",
+				"'sha256-qvfN6NoYkoOeuARSE99bvlVf/W/fb9x0yiH5xYSM6i8='",
+				"'sha256-+oo7jjbAO+Tr8PDe/GEu0E6XloRL/L3Z99OlkkDaR/g='",
+				"'sha256-IAtnNNAx7da4mm6HkJYJl2ZFVK69KgFdHXrV1wPK98c='",
+			],
 			styleSrc: ["'self'", "https:", "'unsafe-inline'"],
 			imgSrc: ["'self'", "PUBLIC_IMAGES_URL"],
 			fontSrc: ["'self'"],
