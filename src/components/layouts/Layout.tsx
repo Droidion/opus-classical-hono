@@ -20,7 +20,7 @@ export const Layout: FC<PropsWithChildren<LayoutProps>> = ({
 				<HeaderLinks />
 			</head>
 			<body>
-				<script src="/public/js/theme-switcher.js" />
+				<script src="/public/js/theme-loader.js" />
 				<div class="grid min-h-screen w-full grid-rows-[auto_1fr_auto] justify-items-center">
 					<Header />
 					<main class="main flex w-full max-w-screen-xl flex-col overflow-auto px-4 pb-4">

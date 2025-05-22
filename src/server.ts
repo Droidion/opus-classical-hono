@@ -33,9 +33,7 @@ app.use(
 		},
 		permissionsPolicy: {
 			fullscreen: ["self"],
-			bluetooth: ["none"],
 			syncXhr: [],
-			camera: false,
 			microphone: [],
 			geolocation: [],
 			usb: ["self"],
