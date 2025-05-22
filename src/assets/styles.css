@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+	--color-lazer: #caa277;
+	--color-codgray: #1a1a1a;
+	--color-mineshaft: #373737;
+	--color-cinnamon: #7e5503;
+	--color-white: #ffffff;
+	--color-black: #000000;
+}
+
+@layer base {
+	html {
+		font-size: 18px;
+	}
+	body {
+		@apply text-mineshaft dark:bg-codgray bg-white font-sans dark:text-white/80;
+	}
+	h1,
+	h2 {
+		@apply font-serif font-medium;
+	}
+	h1 {
+		@apply mt-4 flex flex-wrap justify-center text-center text-3xl xl:text-4xl;
+	}
+	h2 {
+		@apply text-cinnamon dark:text-lazer mt-4 text-2xl;
+	}
+	hr {
+		@apply bg-cinnamon dark:bg-lazer mx-0 my-1 h-px border-none;
+	}
+	p {
+		@apply mt-4;
+	}
+	a {
+		@apply hover:underline;
+	}
+}
+
+@layer components {
+	.icon {
+		@apply fill-mineshaft dark:fill-white/80;
+	}
+	.vertical-separator {
+		@apply relative top-1 mx-1.5 inline-block h-4 w-px bg-black/20 dark:bg-white/20;
+	}
+}
