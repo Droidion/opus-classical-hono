@@ -46,7 +46,16 @@ app.use(
 	}),
 );
 
-app.use(csrf());
+app.use(
+	csrf({
+		origin: (origin) => {
+			const url = new URL(origin);
+			return (
+				url.hostname === "localhost" || url.hostname === "opusclassical.net"
+			);
+		},
+	}),
+);
 
 app.use("/public/*", serveStatic({ root: "./" }));
 
