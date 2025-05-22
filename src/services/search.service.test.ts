@@ -1,5 +1,5 @@
-import type { ComposerSearchResult } from "@/db/schema/composersSearchResults.schema";
 import { beforeEach, describe, expect, it, mock } from "bun:test";
+import type { ComposerSearchResult } from "@/db/schema/composersSearchResults.schema";
 import { searchService } from "./search.service";
 
 // Mock data

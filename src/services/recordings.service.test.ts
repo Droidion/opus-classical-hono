@@ -1,8 +1,8 @@
+import { beforeEach, describe, expect, it, mock } from "bun:test";
 import type { Link } from "@/db/schema/links.schema";
 import type { Performer } from "@/db/schema/performers.schema";
 import type { Recording } from "@/db/schema/recordings.schema";
 import type { RecordingWithPerformersAndLinks } from "@/types/recordings.types";
-import { beforeEach, describe, expect, it, mock } from "bun:test";
 import { recordingsService } from "./recordings.service";
 
 // Mock the repositories

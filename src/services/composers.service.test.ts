@@ -1,7 +1,7 @@
+import { beforeEach, describe, expect, it, mock } from "bun:test";
 import type { Composer } from "@/db/schema/composers.schema";
 import type { Period } from "@/db/schema/periods.schema";
 import { NotFoundError } from "@/errors/errors";
-import { beforeEach, describe, expect, it, mock } from "bun:test";
 import { composersService } from "./composers.service";
 
 // Mock data
