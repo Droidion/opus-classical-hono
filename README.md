@@ -9,6 +9,8 @@ Catalogue for streaming classical music.
 - [Bun](https://bun.sh/)
 - [Hono](https://hono.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
+- [htmx](https://htmx.org/)
+- [hyperscript](https://hyperscript.org/)
 - [Drizzle](https://orm.drizzle.team/)
 - [Neon](https://neon.tech/)
 - [Biome](https://biomejs.dev/)
