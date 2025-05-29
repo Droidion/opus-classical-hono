@@ -29,9 +29,13 @@ export async function renderErrorPage(
 	c: Context,
 ): Promise<Response> {
 	logger.error(error);
-	Sentry.captureException(error);
 	if (error instanceof HTTPException) {
+		// Don't send 403 errors to Sentry, as these are bots sending wrong methods
+		if (error.status !== 403) {
+			Sentry.captureException(error);
+		}
 		return renderErrorResponse(c, error.name, error.status, error.message);
 	}
+	Sentry.captureException(error);
 	return renderErrorResponse(c, error.name, 500, error.message);
 }
