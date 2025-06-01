@@ -13,21 +13,21 @@
 	},
 	"dependencies": {
 		"@neondatabase/serverless": "^1.0.0",
-		"@sentry/bun": "^9.22.0",
-		"drizzle-orm": "^0.43.1",
+		"@sentry/bun": "^9.24.0",
+		"drizzle-orm": "^0.44.1",
 		"fuse.js": "^7.1.0",
-		"hono": "^4.7.10",
+		"hono": "^4.7.11",
 		"keyv": "^5.3.3",
 		"pino": "^9.7.0",
 		"pino-pretty": "^13.0.0",
 		"quick-lru": "^7.0.1",
-		"zod": "^3.25.30"
+		"zod": "^3.25.46"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@tailwindcss/cli": "^4.1.7",
-		"@types/bun": "^1.2.14",
-		"tailwindcss": "^4.1.7",
+		"@tailwindcss/cli": "^4.1.8",
+		"@types/bun": "^1.2.15",
+		"tailwindcss": "^4.1.8",
 		"typescript": "^5.8.3"
 	}
 }
