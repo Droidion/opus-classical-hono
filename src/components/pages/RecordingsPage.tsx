@@ -1,3 +1,4 @@
+import type { FC } from "hono/jsx";
 import { Layout } from "@/components/layouts/Layout";
 import { RecordingCard } from "@/components/partials/RecordingCard";
 import type { Composer } from "@/db/schema/composers.schema";
@@ -5,7 +6,6 @@ import type { Work } from "@/db/schema/works.schema";
 import { env } from "@/services/env.service";
 import type { RecordingWithPerformersAndLinks } from "@/types/recordings.types";
 import { formatWorkName, formatYearsRangeString } from "@/utils/formatting";
-import type { FC } from "hono/jsx";
 
 interface RecordingsPageProps {
 	composer: Composer;

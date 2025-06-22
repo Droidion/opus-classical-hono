@@ -1,7 +1,7 @@
+import { eq } from "drizzle-orm";
 import { db } from "@/db";
 import { type Composer, composersTable } from "@/db/schema/composers.schema";
 import { NotFoundError } from "@/errors/errors";
-import { eq } from "drizzle-orm";
 
 async function getComposers(): Promise<Composer[]> {
 	try {

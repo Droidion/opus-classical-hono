@@ -1,7 +1,7 @@
+import { eq } from "drizzle-orm";
 import { db } from "@/db";
 import { type Work, worksTable } from "@/db/schema/works.schema";
 import { NotFoundError } from "@/errors/errors";
-import { eq } from "drizzle-orm";
 
 async function getWorkById(id: number): Promise<Work> {
 	try {

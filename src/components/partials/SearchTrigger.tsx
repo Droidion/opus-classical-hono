@@ -5,7 +5,6 @@ export const SearchTrigger: FC = () => {
 		<>
 			<div
 				class="search-button label cursor-pointer duration-150 hover:scale-125"
-				aria-label="Search Icon"
 				hx-get="/search-form"
 				hx-target="#search-overlay"
 				hx-swap="innerHTML"

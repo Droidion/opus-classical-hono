@@ -1,5 +1,5 @@
-import type { ComposerSearchResult } from "@/db/schema/composersSearchResults.schema";
 import type { FC } from "hono/jsx";
+import type { ComposerSearchResult } from "@/db/schema/composersSearchResults.schema";
 
 interface ComposerSearchResultsProps {
 	composers: ComposerSearchResult[];

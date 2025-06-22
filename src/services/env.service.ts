@@ -1,5 +1,5 @@
-import { logger } from "@/services/logger.service";
 import { z } from "zod/v4";
+import { logger } from "@/services/logger.service";
 
 const envSchema = z.object({
 	DATABASE_URL: z.url(),

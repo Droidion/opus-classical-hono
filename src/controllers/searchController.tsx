@@ -1,9 +1,9 @@
+import type { Context } from "hono";
+import { HTTPException } from "hono/http-exception";
 import { ComposerSearchForm } from "@/components/partials/ComposerSearchForm";
 import { ComposerSearchResults } from "@/components/partials/ComposerSearchResults";
 import { composerSearchSchema } from "@/routes/schemas";
 import { searchService } from "@/services/search.service";
-import type { Context } from "hono";
-import { HTTPException } from "hono/http-exception";
 
 export async function renderSearchForm(c: Context): Promise<Response> {
 	await searchService.cacheComposers();

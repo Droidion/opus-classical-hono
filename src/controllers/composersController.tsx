@@ -1,8 +1,8 @@
+import type { Context } from "hono";
+import { HTTPException } from "hono/http-exception";
 import { ComposersPage } from "@/components/pages/ComposersPage";
 import { NotFoundError } from "@/errors/errors";
 import { composersService } from "@/services/composers.service";
-import type { Context } from "hono";
-import { HTTPException } from "hono/http-exception";
 
 export async function renderComposersPage(c: Context): Promise<Response> {
 	try {

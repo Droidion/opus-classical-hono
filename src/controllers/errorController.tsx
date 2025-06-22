@@ -1,9 +1,9 @@
-import { ErrorPage } from "@/components/pages/ErrorPage";
-import { logger } from "@/services/logger.service";
 import * as Sentry from "@sentry/bun";
 import type { Context } from "hono";
 import { HTTPException } from "hono/http-exception";
 import type { StatusCode } from "hono/utils/http-status";
+import { ErrorPage } from "@/components/pages/ErrorPage";
+import { logger } from "@/services/logger.service";
 
 async function renderErrorResponse(
 	c: Context,

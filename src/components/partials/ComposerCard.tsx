@@ -1,6 +1,7 @@
+import type { FC } from "hono/jsx";
 import type { Composer } from "@/db/schema/composers.schema";
 import { formatYearsRangeString } from "@/utils/formatting";
-import type { FC } from "hono/jsx";
+
 interface ComposerCardProps {
 	composer: Composer;
 }

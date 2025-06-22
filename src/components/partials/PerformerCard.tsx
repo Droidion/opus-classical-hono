@@ -1,5 +1,5 @@
-import type { Performer } from "@/db/schema/performers.schema";
 import type { FC } from "hono/jsx";
+import type { Performer } from "@/db/schema/performers.schema";
 
 interface PerformerCardProps {
 	performer: Performer;

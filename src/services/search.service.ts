@@ -1,5 +1,5 @@
-import type { ComposerSearchResult } from "@/db/schema/composersSearchResults.schema";
 import Fuse from "fuse.js";
+import type { ComposerSearchResult } from "@/db/schema/composersSearchResults.schema";
 import { cacheService } from "./cache.service";
 import { composerSearchResultsRepository } from "./repositories/composersSearchResults.repository";
 

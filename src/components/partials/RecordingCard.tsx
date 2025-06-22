@@ -1,8 +1,8 @@
+import type { FC } from "hono/jsx";
 import type { Link } from "@/db/schema/links.schema";
 import type { Performer } from "@/db/schema/performers.schema";
 import type { Recording } from "@/db/schema/recordings.schema";
 import { formatWorkLength, formatYearsRangeString } from "@/utils/formatting";
-import type { FC } from "hono/jsx";
 import { LinkCard } from "./LinkCard";
 import { PerformerCard } from "./PerformerCard";
 

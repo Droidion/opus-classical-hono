@@ -1,6 +1,6 @@
+import type { FC } from "hono/jsx";
 import type { Period } from "@/db/schema/periods.schema";
 import { formatYearsRangeString } from "@/utils/formatting";
-import type { FC } from "hono/jsx";
 
 interface PeriodHeaderProps {
 	period: Period;

@@ -1,6 +1,6 @@
+import { inArray } from "drizzle-orm";
 import { db } from "@/db";
 import { type Performer, performersTable } from "@/db/schema/performers.schema";
-import { inArray } from "drizzle-orm";
 
 async function getPerformersByRecordings(
 	recordingIds: number[],

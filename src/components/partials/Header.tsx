@@ -1,7 +1,7 @@
+import type { FC } from "hono/jsx";
 import { MainLogo } from "@/components/icons/MainLogo";
 import { SearchTrigger } from "@/components/partials/SearchTrigger";
 import { ThemeSwitcher } from "@/components/partials/ThemeSwitcher";
-import type { FC } from "hono/jsx";
 
 export const Header: FC = () => {
 	return (

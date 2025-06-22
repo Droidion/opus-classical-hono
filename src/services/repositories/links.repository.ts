@@ -1,6 +1,6 @@
+import { inArray } from "drizzle-orm";
 import { db } from "@/db";
 import { type Link, linksTable } from "@/db/schema/links.schema";
-import { inArray } from "drizzle-orm";
 
 async function getLinksByRecordings(recordingIds: number[]): Promise<Link[]> {
 	try {

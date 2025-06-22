@@ -1,6 +1,6 @@
+import { eq } from "drizzle-orm";
 import { db } from "@/db";
 import { type Recording, recordingsTable } from "@/db/schema/recordings.schema";
-import { eq } from "drizzle-orm";
 
 async function getRecordingsByWork(workId: number): Promise<Recording[]> {
 	try {

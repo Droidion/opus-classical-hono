@@ -1,5 +1,5 @@
-import type { Link } from "@/db/schema/links.schema";
 import type { FC } from "hono/jsx";
+import type { Link } from "@/db/schema/links.schema";
 
 interface LinkCardProps {
 	link: Link;

@@ -1,5 +1,9 @@
 import "@/services/sentry.service";
 
+import { Hono } from "hono";
+import { serveStatic } from "hono/bun";
+import { csrf } from "hono/csrf";
+import { secureHeaders } from "hono/secure-headers";
 import { csrfConfig, secureHeadersConfig } from "@/config/plugins";
 import {
 	renderErrorPage,
@@ -7,10 +11,6 @@ import {
 } from "@/controllers/errorController";
 import { routes } from "@/routes";
 import { env } from "@/services/env.service";
-import { Hono } from "hono";
-import { serveStatic } from "hono/bun";
-import { csrf } from "hono/csrf";
-import { secureHeaders } from "hono/secure-headers";
 
 const app = new Hono();
 

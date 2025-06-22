@@ -1,10 +1,10 @@
+import type { Context } from "hono";
+import { HTTPException } from "hono/http-exception";
 import { WorksPage } from "@/components/pages/WorksPage";
 import { NotFoundError } from "@/errors/errors";
 import { worksPageSchema } from "@/routes/schemas";
 import { composersService } from "@/services/composers.service";
 import { worksService } from "@/services/works.service";
-import type { Context } from "hono";
-import { HTTPException } from "hono/http-exception";
 
 export async function renderWorksPage(c: Context): Promise<Response> {
 	const result = worksPageSchema.safeParse(c.req.param());

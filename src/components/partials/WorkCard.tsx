@@ -1,3 +1,4 @@
+import type { FC } from "hono/jsx";
 import type { Work } from "@/db/schema/works.schema";
 import {
 	formatCatalogueName,
@@ -5,7 +6,6 @@ import {
 	formatWorkName,
 	formatYearsRangeString,
 } from "@/utils/formatting";
-import type { FC } from "hono/jsx";
 
 interface WorkCardProps {
 	work: Work;

@@ -1,8 +1,8 @@
+import type { FC, PropsWithChildren } from "hono/jsx";
 import { Footer } from "@/components/partials/Footer";
 import { Header } from "@/components/partials/Header";
 import { HeaderLinks } from "@/components/partials/HeaderLinks";
 import { HeaderMeta } from "@/components/partials/HeaderMeta";
-import type { FC, PropsWithChildren } from "hono/jsx";
 
 interface LayoutProps {
 	title: string;
