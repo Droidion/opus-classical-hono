@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 const slugSchema = z.string().min(1);
 const queryShema = slugSchema;
