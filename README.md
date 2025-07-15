@@ -70,6 +70,19 @@ Or fix linting and formatting:
 bun run lint:fix
 ```
 
+## Updating dependencies
+
+Update bun packages with `$ bun outdated`.
+
+Update CDN scripts:
+
+- Check out new versions on [unpkg](https://unpkg.com/)
+- Generate the integrity hash with:
+  ```sh
+  curl -s https://unpkg.com/htmx.org@2.0.6/dist/htmx.min.js | openssl dgst -sha384 -binary | openssl base64 -A
+  ```
+- Update the integrity hashes in `src/components/partials/HeaderLinks.tsx` and `src/config/plugins.ts`.
+
 ## Deployment
 
 Deployment is handled with [Dockploy](https://dokploy.com) and [Docker](https://www.docker.com/).

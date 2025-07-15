@@ -32,8 +32,8 @@ export const HeaderLinks: FC = () => {
 			<link rel="stylesheet" href="/public/styles.css" />
 			<script type="module" src="/public/js/theme-switcher.js" defer />
 			<script
-				src="https://unpkg.com/htmx.org@2.0.4"
-				integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+				src="https://unpkg.com/htmx.org@2.0.6"
+				integrity="Akqfrbj/HpNVo8k11SXBb6TlBWmXXlYQrCSqEWmyKJe+hDm3Z/B2WVG4smwBkRVm"
 				crossorigin="anonymous"
 			/>
 			<script
