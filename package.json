@@ -1,7 +1,7 @@
 {
 	"name": "opus-classical",
 	"type": "module",
-	"packageManager": "bun@1.2.21",
+	"packageManager": "bun@1.2.23",
 	"scripts": {
 		"dev": "NODE_ENV=development bun run --hot src/server.ts",
 		"prod": "NODE_ENV=production bun run src/server.ts",
@@ -17,12 +17,12 @@
 	},
 	"dependencies": {
 		"@neondatabase/serverless": "1.0.1",
-		"@sentry/bun": "10.15.0",
+		"@sentry/bun": "10.16.0",
 		"drizzle-orm": "0.44.5",
 		"fuse.js": "7.1.0",
-		"hono": "4.9.8",
-		"keyv": "5.5.2",
-		"pino": "9.11.0",
+		"hono": "4.9.9",
+		"keyv": "5.5.3",
+		"pino": "9.12.0",
 		"pino-pretty": "13.1.1",
 		"quick-lru": "7.2.0",
 		"zod": "4.1.11"
@@ -30,7 +30,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.2.4",
 		"@tailwindcss/cli": "4.1.13",
-		"@types/bun": "1.2.22",
+		"@types/bun": "1.2.23",
 		"tailwindcss": "4.1.13",
 		"typescript": "5.9.2"
 	}
