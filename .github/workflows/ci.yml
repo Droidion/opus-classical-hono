@@ -37,7 +37,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            bun.lock
+            ~/.bun/install/cache
             node_modules
           key: ${{ runner.os }}-bun-${{ hashFiles('bun.lock') }}
           restore-keys: |
@@ -47,6 +47,7 @@ jobs:
         run: |
           echo "Bun version: $(bun --version)"
           echo "Node version: $(node --version)"
+          echo "Installing dependencies..."
           bun ci
 
       - name: Run linter
