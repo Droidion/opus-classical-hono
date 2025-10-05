@@ -16,22 +16,22 @@
 		"taze:upgrade:safe": "bunx taze -w"
 	},
 	"dependencies": {
-		"@neondatabase/serverless": "1.0.1",
-		"@sentry/bun": "10.16.0",
-		"drizzle-orm": "0.44.5",
+		"@neondatabase/serverless": "1.0.2",
+		"@sentry/bun": "10.17.0",
+		"drizzle-orm": "0.44.6",
 		"fuse.js": "7.1.0",
 		"hono": "4.9.9",
 		"keyv": "5.5.3",
-		"pino": "9.12.0",
+		"pino": "10.0.0",
 		"pino-pretty": "13.1.1",
 		"quick-lru": "7.2.0",
 		"zod": "4.1.11"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.2.4",
-		"@tailwindcss/cli": "4.1.13",
+		"@biomejs/biome": "2.2.5",
+		"@tailwindcss/cli": "4.1.14",
 		"@types/bun": "1.2.23",
-		"tailwindcss": "4.1.13",
-		"typescript": "5.9.2"
+		"tailwindcss": "4.1.14",
+		"typescript": "5.9.3"
 	}
 }
