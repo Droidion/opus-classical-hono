@@ -3,7 +3,7 @@ export const secureHeadersConfig = {
 		defaultSrc: ["'self'"],
 		scriptSrc: [
 			"'self'",
-			"'sha384-Akqfrbj/HpNVo8k11SXBb6TlBWmXXlYQrCSqEWmyKJe+hDm3Z/B2WVG4smwBkRVm'",
+			"'sha384-ZBXiYtYQ6hJ2Y0ZNoYuI+Nq5MqWBr+chMrS/RkXpNzQCApHEhOt2aY8EJgqwHLkJ'",
 			"'sha384-NzchC8z9HmP/Ed8cheGl9XuSrFSkDNHPiDl+ujbHE0F0I7tWC4rUnwPXP+7IvVZv'",
 		],
 		styleSrc: ["'self'", "https:", "'unsafe-inline'"],
